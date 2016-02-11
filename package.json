@@ -1,0 +1,38 @@
+{
+  "name": "react-native-sidebar",
+  "version": "0.1.0",
+  "description": "A react-native Animated based sidebar (aka drawer) solution.",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha --recursive",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --recursive"
+  },
+  "author": "Christoph Jerolimov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bringnow/react-native-sidebar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bringnow/react-native-sidebar/issues"
+  },
+  "homepage": "https://github.com/bringnow/react-native-sidebar#readme",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "android",
+    "ios",
+    "sidebar",
+    "sidemenu",
+    "drawer"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "coveralls": "^2.11.4",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  }
+}
