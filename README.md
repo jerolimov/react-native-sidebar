@@ -14,6 +14,35 @@ react-native [Animated](https://facebook.github.io/react-native/docs/animated.ht
 npm install --save react-native-sidebar
 ```
 
+Usage:
+
+```js
+import Sidebar from 'react-native-sidebar';
+
+render() {
+	return (
+		<Sidebar
+				leftSidebar={ this.renderLeftSidebar() }
+				rightSidebar={ this.renderRightSidebar() }
+				style={{ flex: 1, backgroundColor: 'black' }}>
+			{ this.renderContent() }
+		</Sidebar>
+	)
+}
+```
+
+Supported properties:
+
+* `open`: bool or string (bool true or string 'left' opens left sidebar, string 'right' opens right sidebar)
+* `leftSidebar`: Compontent
+* `leftSidebarWidth`: Number (callback `sidebarWidth`: Number, otherwise use default 280)
+* `leftThreshold`: Number (callback `threshold`: Number, otherwise use default 30)
+* `rightSidebar`: Compontent
+* `rightSidebarWidth`: Number (callback `sidebarWidth`: Number, otherwise use default 280)
+* `rightThreshold`: Number (callback `threshold`: Number, otherwise use default 30)
+* `overlayColor`: Color
+* childrens: Compontent[]
+
 ## Alternatives
 
 * Native but Android-only [DrawerLayoutAndroid](https://facebook.github.io/react-native/docs/drawerlayoutandroid.html)
