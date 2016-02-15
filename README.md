@@ -43,6 +43,14 @@ Supported properties:
 * `overlayColor`: Color
 * childrens: Compontent[]
 
+## Effects
+
+More effects coming soon! Input / ideas (as issue) or PR are welcome. :+1:
+
+### Default
+
+
+
 ## Alternatives
 
 * Native but Android-only [DrawerLayoutAndroid](https://facebook.github.io/react-native/docs/drawerlayoutandroid.html)
