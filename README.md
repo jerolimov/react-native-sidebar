@@ -22,6 +22,7 @@ import Sidebar from 'react-native-sidebar';
 render() {
 	return (
 		<Sidebar
+				ref={(ref) => this._drawer = ref}
 				leftSidebar={ this.renderLeftSidebar() }
 				rightSidebar={ this.renderRightSidebar() }
 				style={{ flex: 1, backgroundColor: 'black' }}>
@@ -32,6 +33,8 @@ render() {
 ```
 
 Supported properties:
+
+* use like this -> this._drawer.open("left")
 
 * `open`: bool or string (bool true or string 'left' opens left sidebar, string 'right' opens right sidebar)
 * `leftSidebar`: Compontent
